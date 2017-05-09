@@ -96,7 +96,7 @@ shinyUI(fluidPage(
                               value = max(data$time),
                               animate=animationOptions(interval=100, loop=FALSE))
     ),
-    #Create another column and the select list input
+    #Create another column and the select list input, single selection mode
     shiny::column(4,
                   selectInput("topic", "Topic", c("All Topics", topicNames), multiple = FALSE, selected = "All Topics")
     )
